@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="sanear\src\MyClock.cpp">
+      <Filter>DirectShow</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\MyFilter.cpp">
+      <Filter>DirectShow</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\MyPin.cpp">
+      <Filter>DirectShow</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\pch.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\DspMatrix.cpp">
+      <Filter>Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\DspChunk.cpp">
+      <Filter>Processors\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\DspRate.cpp">
+      <Filter>Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\AudioRenderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\DspCrossfeed.cpp">
+      <Filter>Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\DspVolume.cpp">
+      <Filter>Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\MyBasicAudio.cpp">
+      <Filter>DirectShow</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\DspTempo.cpp">
+      <Filter>Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\DspLimiter.cpp">
+      <Filter>Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\DspDither.cpp">
+      <Filter>Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\Factory.cpp" />
+    <ClCompile Include="sanear\src\Settings.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\DspBalance.cpp">
+      <Filter>Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\MyPropertyPage.cpp">
+      <Filter>DirectShow</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\MyTestClock.cpp">
+      <Filter>DirectShow</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\SampleCorrection.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\AudioDeviceManager.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\AudioDevice.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="sanear\src\DspRealtimeRate.cpp">
+      <Filter>Processors</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sanear\src\DspMatrix.h">
+      <Filter>Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\pch.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\Utils.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\MyClock.h">
+      <Filter>DirectShow</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\MyFilter.h">
+      <Filter>DirectShow</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\MyPin.h">
+      <Filter>DirectShow</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\DspFormat.h">
+      <Filter>Processors\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\DspChunk.h">
+      <Filter>Processors\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\DspRate.h">
+      <Filter>Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\AudioRenderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\DspCrossfeed.h">
+      <Filter>Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\DspVolume.h">
+      <Filter>Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\MyBasicAudio.h">
+      <Filter>DirectShow</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\DspTempo.h">
+      <Filter>Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\DspLimiter.h">
+      <Filter>Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\DspDither.h">
+      <Filter>Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\Interfaces.h" />
+    <ClInclude Include="sanear\src\Factory.h" />
+    <ClInclude Include="sanear\src\Settings.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\DspBalance.h">
+      <Filter>Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\MyPropertyPage.h">
+      <Filter>DirectShow</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\MyTestClock.h">
+      <Filter>DirectShow</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\DspBase.h">
+      <Filter>Processors\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\SampleCorrection.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\AudioDeviceManager.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\AudioDevice.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="sanear\src\DspRealtimeRate.h">
+      <Filter>Processors</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="DirectShow">
+      <UniqueIdentifier>{1cc808ed-f91c-45a4-9c82-d6a6d422a8eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{3f58a259-0add-4551-8143-2356eb53a71d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{0dffffd5-d64c-40fb-b287-a85fd25a01ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Processors">
+      <UniqueIdentifier>{e8ae44fa-1f63-44d6-b082-9b38edb6f5e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Processors\Base">
+      <UniqueIdentifier>{a3828985-2937-4570-8aa1-110935fd6227}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

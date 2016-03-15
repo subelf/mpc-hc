@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BB2B61AF-734A-4DAD-9326-07F4F9EA088F}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Choose>
+    <When Condition="'$(SanearPlatformPropsPath)' != ''" />
+    <When Condition="'$(SolutionDir)' != '' And Exists('$(SolutionDir)sanear-platform.props')">
+      <PropertyGroup>
+        <SanearPlatformPropsPath>$(SolutionDir)sanear-platform.props</SanearPlatformPropsPath>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <SanearPlatformPropsPath>sanear-platform.props</SanearPlatformPropsPath>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+  <Import Project="$(SanearPlatformPropsPath)" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <Choose>
+    <When Condition="'$(SanearPropsPath)' != ''" />
+    <When Condition="'$(SolutionDir)' != '' And Exists('$(SolutionDir)sanear.props')">
+      <PropertyGroup>
+        <SanearPropsPath>$(SolutionDir)sanear.props</SanearPropsPath>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <SanearPropsPath>sanear.props</SanearPropsPath>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+  <Import Project="$(SanearPropsPath)" />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="sanear\src\AudioDevice.h" />
+    <ClInclude Include="sanear\src\AudioDeviceManager.h" />
+    <ClInclude Include="sanear\src\DspBalance.h" />
+    <ClInclude Include="sanear\src\DspBase.h" />
+    <ClInclude Include="sanear\src\DspCrossfeed.h" />
+    <ClInclude Include="sanear\src\DspDither.h" />
+    <ClInclude Include="sanear\src\DspFormat.h" />
+    <ClInclude Include="sanear\src\DspLimiter.h" />
+    <ClInclude Include="sanear\src\DspMatrix.h" />
+    <ClInclude Include="sanear\src\DspChunk.h" />
+    <ClInclude Include="sanear\src\AudioRenderer.h" />
+    <ClInclude Include="sanear\src\DspTempo.h" />
+    <ClInclude Include="sanear\src\DspRealtimeRate.h" />
+    <ClInclude Include="sanear\src\DspVolume.h" />
+    <ClInclude Include="sanear\src\Interfaces.h" />
+    <ClInclude Include="sanear\src\MyBasicAudio.h" />
+    <ClInclude Include="sanear\src\MyPropertyPage.h" />
+    <ClInclude Include="sanear\src\MyTestClock.h" />
+    <ClInclude Include="sanear\src\Settings.h" />
+    <ClInclude Include="sanear\src\SampleCorrection.h" />
+    <ClInclude Include="sanear\src\Utils.h" />
+    <ClInclude Include="sanear\src\MyFilter.h" />
+    <ClInclude Include="sanear\src\MyClock.h" />
+    <ClInclude Include="sanear\src\Factory.h" />
+    <ClInclude Include="sanear\src\pch.h" />
+    <ClInclude Include="sanear\src\MyPin.h" />
+    <ClInclude Include="sanear\src\DspRate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sanear\src\AudioDevice.cpp" />
+    <ClCompile Include="sanear\src\AudioDeviceManager.cpp" />
+    <ClCompile Include="sanear\src\DspBalance.cpp" />
+    <ClCompile Include="sanear\src\DspCrossfeed.cpp" />
+    <ClCompile Include="sanear\src\DspDither.cpp" />
+    <ClCompile Include="sanear\src\DspLimiter.cpp" />
+    <ClCompile Include="sanear\src\DspMatrix.cpp" />
+    <ClCompile Include="sanear\src\DspChunk.cpp" />
+    <ClCompile Include="sanear\src\DspTempo.cpp" />
+    <ClCompile Include="sanear\src\DspRealtimeRate.cpp" />
+    <ClCompile Include="sanear\src\DspVolume.cpp" />
+    <ClCompile Include="sanear\src\MyBasicAudio.cpp" />
+    <ClCompile Include="sanear\src\MyFilter.cpp" />
+    <ClCompile Include="sanear\src\MyClock.cpp" />
+    <ClCompile Include="sanear\src\Factory.cpp" />
+    <ClCompile Include="sanear\src\MyPropertyPage.cpp" />
+    <ClCompile Include="sanear\src\MyTestClock.cpp" />
+    <ClCompile Include="sanear\src\pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sanear\src\MyPin.cpp" />
+    <ClCompile Include="sanear\src\DspRate.cpp" />
+    <ClCompile Include="sanear\src\AudioRenderer.cpp" />
+    <ClCompile Include="sanear\src\Settings.cpp" />
+    <ClCompile Include="sanear\src\SampleCorrection.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
