@@ -1,6 +1,6 @@
 [submodule "LAVFilters"]
     path = src/thirdparty/LAVFilters/src
-    url = https://github.com/mpc-hc/LAVFilters.git
+    url = https://github.com/subelf/LAVFilters.git
 [submodule "lcms2"]
     path = src/thirdparty/lcms2/library
     url = https://github.com/mm2/Little-CMS.git
