@@ -88,5 +88,8 @@
     <ClInclude Include="SubPicQueueSettings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="afx_dx7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

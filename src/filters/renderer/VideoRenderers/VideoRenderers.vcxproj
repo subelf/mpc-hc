@@ -112,10 +112,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AllocatorCommon.cpp" />
-    <ClCompile Include="AllocatorCommon7.cpp" />
+    <ClCompile Include="AllocatorCommon7.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="D3DFont.cpp" />
     <ClCompile Include="Dither.cpp" />
-    <ClCompile Include="DX7AllocatorPresenter.cpp" />
+    <ClCompile Include="DX7AllocatorPresenter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="DX9AllocatorPresenter.cpp" />
     <ClCompile Include="DX9RenderingEngine.cpp" />
     <ClCompile Include="DXRAllocatorPresenter.cpp" />
@@ -127,16 +137,31 @@
     <ClCompile Include="OuterEVR.cpp" />
     <ClCompile Include="OuterVMR.cpp" />
     <ClCompile Include="PixelShaderCompiler.cpp" />
-    <ClCompile Include="QT7AllocatorPresenter.cpp" />
+    <ClCompile Include="QT7AllocatorPresenter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="QT9AllocatorPresenter.cpp" />
     <ClCompile Include="RenderersSettings.cpp" />
-    <ClCompile Include="RM7AllocatorPresenter.cpp" />
+    <ClCompile Include="RM7AllocatorPresenter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="RM9AllocatorPresenter.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SyncRenderer.cpp" />
-    <ClCompile Include="VMR7AllocatorPresenter.cpp" />
+    <ClCompile Include="VMR7AllocatorPresenter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="VMR9AllocatorPresenter.cpp" />
   </ItemGroup>
   <ItemGroup>

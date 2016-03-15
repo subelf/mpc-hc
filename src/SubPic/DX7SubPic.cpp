@@ -19,7 +19,8 @@
  *
  */
 
-#include "stdafx.h"
+#include "afx_dx7.h"
+
 #include "DX7SubPic.h"
 #include <ddraw.h>
 

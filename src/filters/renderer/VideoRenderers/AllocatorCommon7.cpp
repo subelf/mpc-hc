@@ -19,7 +19,9 @@
  *
  */
 
+#include "../../../SubPic/afx_dx7.h"
 #include "stdafx.h"
+
 #include <InitGuid.h>
 #include "AllocatorCommon7.h"
 #include "../DSUtil/DSUtil.h"

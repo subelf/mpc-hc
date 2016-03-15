@@ -264,6 +264,7 @@
     <ClInclude Include="library\Source\MediaInfo\Reader\Reader__Base.h" />
     <ClInclude Include="library\Source\MediaInfo\Setup.h" />
     <ClInclude Include="library\Source\MediaInfo\TimeCode.h" />
+    <ClInclude Include="library\Source\MediaInfo\XmlUtils.h" />
     <ClInclude Include="library\Source\MediaInfo\Tag\File_ApeTag.h" />
     <ClInclude Include="library\Source\MediaInfo\Tag\File_Id3.h" />
     <ClInclude Include="library\Source\MediaInfo\Tag\File_Id3v2.h" />
@@ -369,6 +370,7 @@
     <ClCompile Include="library\Source\MediaInfo\File_Dummy.cpp" />
     <ClCompile Include="library\Source\MediaInfo\File_Other.cpp" />
     <ClCompile Include="library\Source\MediaInfo\File_Unknown.cpp" />
+    <ClCompile Include="library\Source\MediaInfo\HashWrapper.cpp" />
     <ClCompile Include="library\Source\MediaInfo\File__Analyze.cpp" />
     <ClCompile Include="library\Source\MediaInfo\File__Analyze_Buffer.cpp" />
     <ClCompile Include="library\Source\MediaInfo\File__Analyze_Buffer_MinimizeSize.cpp" />
@@ -424,6 +426,7 @@
     <ClCompile Include="library\Source\MediaInfo\Text\File_TimedText.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Text\File_Ttml.cpp" />
     <ClCompile Include="library\Source\MediaInfo\TimeCode.cpp" />
+    <ClCompile Include="library\Source\MediaInfo\XmlUtils.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Multiple\File_Ancillary.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Multiple\File_Bdmv.cpp" />
     <ClCompile Include="library\Source\MediaInfo\Multiple\File_Cdxa.cpp" />

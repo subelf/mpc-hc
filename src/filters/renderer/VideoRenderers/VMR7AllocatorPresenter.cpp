@@ -19,7 +19,9 @@
  *
  */
 
+#include "../../../SubPic/afx_dx7.h"
 #include "stdafx.h"
+
 #include "RenderersSettings.h"
 
 #include "VMR7AllocatorPresenter.h"

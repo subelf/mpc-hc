@@ -96,7 +96,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CoordGeom.cpp" />
-    <ClCompile Include="DX7SubPic.cpp" />
+    <ClCompile Include="DX7SubPic.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="DX9SubPic.cpp" />
     <ClCompile Include="MemSubPic.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -113,6 +118,7 @@
     <ClInclude Include="CoordGeom.h" />
     <ClInclude Include="DX7SubPic.h" />
     <ClInclude Include="DX9SubPic.h" />
+    <ClInclude Include="afx_dx7.h" />
     <ClInclude Include="SubPicQueueSettings.h" />
     <ClInclude Include="ISubPic.h" />
     <ClInclude Include="ISubRender.h" />

@@ -19,6 +19,7 @@
  *
  */
 
+#include "../../../SubPic/afx_dx7.h"
 #include "stdafx.h"
 #include "RM7AllocatorPresenter.h"
 
