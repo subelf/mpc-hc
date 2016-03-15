@@ -20,5 +20,16 @@
 
 #pragma once
 
+#include <math.h>
 
-void WorkAroundMathLibraryBug();
+inline void WorkAroundMathLibraryBug()
+{
+#ifdef _WIN64
+#if (_MSC_VER == 1800)
+	// Temporary disable the use of FMA3 to work around a bug affecting the x64 math library
+	// See http://connect.microsoft.com/VisualStudio/feedback/details/811093
+	// 20160315: Fixed in 1900 (VC2015). //Giton Xu <adm@subelf.net>
+	_set_FMA3_enable(0);
+#endif
+#endif
+}

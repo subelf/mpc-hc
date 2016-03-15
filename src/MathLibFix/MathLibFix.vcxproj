@@ -115,9 +115,6 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="MathLibFix.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="MathLibFix.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
